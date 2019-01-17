@@ -8,7 +8,7 @@ exports.up = function(knex, Promise) {
 
 
     tbl.float('quantity');
-    tbl.string('measure-type', 255).notNullable();
+    tbl.string('measureType', 255).notNullable();
   })
 };
 
