@@ -16,7 +16,8 @@ exports.seed = function(knex, Promise) {
         {name: 'eggs'},
         {name: 'chicken broth'},
         {name: 'corn starch'},
-        {name: 'water'}
+        {name: 'water'},
+        {name: 'green onions'}
       ]);
     });
 };
