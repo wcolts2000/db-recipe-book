@@ -10,4 +10,10 @@ router.get('/', (req, res) => {
     .catch(err => res.status(500).json({ message: " there was an error retrieving the data"}))
 })
 
+router.post('/', (req, res) => {
+  helpers.addRecipe(req.body)
+  .then(id => res.status(201).json(id))
+  .catch(err => res.status(500).json({ message: "There was an error adding the recipe"}))
+})
+
 module.exports = router;
